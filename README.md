@@ -10,7 +10,7 @@
 
 *******************************************/
 
-Blocks is a very basic and tiny [8kb gzipped], fully responsive and block structured CSS framework to do the job. 
+Blocks is a very initial, basic and tiny [8kb gzipped] but fully responsive and block structured CSS framework. 
 
 Compiled and deployed originally using SCSS.
 
@@ -84,6 +84,12 @@ Basic usage:
 ```
 
 where 'number' and 'block' are developer choices respectively.
+
+>>Colors
+
+By default, blocks SCSS file comes with an empty array of colors. You can define and compile colors as key=>value of your choice
+
+and use it by classes: .color-[color] and .bg-[color] for text and background colors respectively where color is the actual key defined in $colors array.
 
 >>Print
 
