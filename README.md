@@ -10,9 +10,11 @@
 
 *******************************************/
 
-Blocks is one tiny [8kb], fully responsive and block structured CSS framework to do the job. Compiled and deployed originally using SCSS.
+Blocks is a very basic and tiny [8kb gzipped], fully responsive and block structured CSS framework to do the job. 
 
-I build this framework for my personal use initially to get rid of bloatware of Bootstrap (<- still love ya) and a clean CSS having no useless styles to reduce request size and page loading speed.
+Compiled and deployed originally using SCSS.
+
+I build this framework for my personal use initially to get rid of bloatware of Bootstrap (<- still love ya) and a clean CSS having least useless styles.
 
 For instant examples, please follow block.html
 
