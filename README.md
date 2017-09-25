@@ -16,7 +16,7 @@ I build this framework for my personal use initially to get rid of bloatware of 
 
 For instant examples, please follow block.html
 
-Websites using Blocks (probably initial builds :))):
+Websites using Blocks (probably initial builds :bowtie:):
 
  http://olympiapublishers.com/
  
@@ -45,8 +45,8 @@ Custom number of blocks can be defined using SCSS.
 Example:
 ```
 <div class="row-fluid">
-  <div class="[block]"></div>
-  <div class="[block]"></div>
+  <div class="[block] fl"></div>
+  <div class="[block] fr"></div>
 </div>
 ```
 where 'block' is the developer choice of block and .row-fluid fills out extra spaces around to fill up entire container.
@@ -76,8 +76,8 @@ Basic usage:
 
 ```
 <div class="gutter-[number]">
-  <div class="[block]"></div>
-  <div class="[block]"></div>
+  <div class="[block] fl"></div>
+  <div class="[block] fr"></div>
 </div>
 ```
 
@@ -90,7 +90,7 @@ Blocks also comes with print media properties .print_show and .print_hide to sho
 
 >>Others
 
-Blocks comes with predefined general frequently used general properties. Please refer to css/blocks.css for complete list as I am too lazy to list each one here.
+Blocks comes with predefined frequently used general properties. Please refer to css/blocks.css for complete list as I am too lazy to list each one here.  :sleeping:
 
 **********************************************************************************************************************
 
