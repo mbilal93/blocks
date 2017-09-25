@@ -1,0 +1,146 @@
+<!Doctype html>
+<html>
+
+<head>
+	<title>Blocks Demo</title>
+    <link rel="stylesheet" href="css/blocks.css" media="all">
+</head>
+
+<body>
+
+<style>
+    body {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+.container {border:1px solid; padding:10px;}
+[class*="block-"] {
+    background-color: #ccc;
+    border:1px solid white;
+    height: 100px;
+}
+.bg {background-color: dodgerblue; width: 100%; height:100px}
+h2 {
+    padding-bottom:15px;
+    text-align: center;
+}
+</style>
+
+	<div class="container">
+        <h1>Blocks.css Test File</h1>
+        <br>
+        <!--Single Viewport Test-->
+        <div class="text-center">This element shows on:</div>
+        <div style="color: darkred;">
+        <h2 class="desktop_only">Desktop only!</h2>
+        <div class="clear space2"></div>
+        <h2 class="tablet_only">Tablet only!</h2>
+        <div class="clear space2"></div>
+        <h2 class="phone_only">Phone only!</h2>
+        <div class="clear space2"></div>
+        </div>
+
+        <!--Multi viewport test-->
+        <div style="color: darkred;">
+            <div class="text-center">This element shows on:</div>
+        <h2 class="desktop">Desktop!</h2>
+        <div class="clear space2"></div>
+        <h2 class="tablet">& Tablet!</h2>
+        <div class="clear space2"></div>
+        <h2 class="phone">& Phone!</h2>
+        <div class="clear space2"></div>
+
+        <!--Non printable element test-->
+        <div style="color: darkred;" class="text-center print_hide">
+            <img src="images/i-will-not-print.jpg" width="120">
+        </div>
+
+        <!--printable element test-->
+        <div style="color: darkred;" class="text-center print_show">
+            <h3><img src="images/NS-1.jpg" width="auto" height="120" style="vertical-align:middle"> <br><br> KYUN NIKALA MUJHE!</h3>
+        </div>
+
+    <br>
+        </div>
+
+        <div class="clear space2"></div>
+
+    	<h2>2 Grid</h2>
+    	<div class=".gutter-1">
+        	<div class="block-6 phone-12 fl">
+                <div class="bg"></div>
+
+            </div>
+            <div class="block-6 phone-12 fl">
+                <div class="bg"></div>
+
+            </div>
+        </div>
+        
+        <div class="clear space2"></div>
+        
+        <h2>3 Grid</h2>
+    	<div class=".gutter-1">
+        	<div class="block-4 phone-12 fl"><div class="bg"></div></div>
+            <div class="block-4 phone-12 fl"><div class="bg"></div></div>
+            <div class="block-4 phone-12 fl"><div class="bg"></div></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear space2"></div>
+        
+        <h2>4 Grid</h2>
+    	<div>
+        	<div class="block-3 tab-6 fl"><div class="bg"></div></div>
+            <div class="block-3 tab-6 fl"><div class="bg"></div></div>
+            <div class="block-3 tab-6 fl"><div class="bg"></div></div>
+            <div class="block-3 tab-6 fl"><div class="bg"></div></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear space2"></div>
+        
+        
+        <h2>6 Grid</h2>
+    	<div>
+        	<div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear space2"></div>
+
+
+        <h2>12 Grid</h2>
+        <div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="clear"></div>
+        </div>
+
+
+
+
+        <div class="clear space2"></div>
+        
+        <div class="clear space2"></div>
+        
+    </div>
+
+</body>
+
+</html>
