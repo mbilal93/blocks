@@ -76,7 +76,7 @@ p{line-height:25px;font-size:16px;}
 /*========Spaces==========*/
 @for $i from 1 through $spaces
 {
-  .space#{$i} {padding-top:$i/2 + 0em;}
+  .space-#{$i} {padding-top:$i/2 + 0em;}
 }
   /*========Blocks==========*/
   @if $blocks
@@ -97,7 +97,7 @@ p{line-height:25px;font-size:16px;}
     display: table;
     clear: both;
   }
-  }
+  } 
 
 /*========Font Sizes==========*/
 @for $i from 10 through $font_size
