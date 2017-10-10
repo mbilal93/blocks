@@ -18,13 +18,10 @@ I build this framework for my personal use initially to get rid of bloatware of 
 
 For instant examples, please follow block.html
 
-Websites using Blocks (probably initial builds :bowtie:):
-
- http://olympiapublishers.com/
- 
- https://superiorsurfaces.co.uk/
+Live DEMO on working websites (probably initial builds :bowtie:):
  
  http://novae.mc/
+ https://olympiapublishers.com
 
 ********************************************************************
 
