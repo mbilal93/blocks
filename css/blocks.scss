@@ -1,6 +1,6 @@
 /******************************************
 
-    **Blocks CSS Framework**
+
 
     Author: Muhammad Bilal
     Last Modified: 22/04/2017
@@ -19,9 +19,9 @@ $spaces : 10; // space percent / amount
 $gutters_gap : 0.5; // gutter percent / amount
 $gutters_count : 10;
 $font_size: 65; //generate fonts
- 
+
 $colors : (
-        
+
 );
 
 $desktop_large_size : 1360;
@@ -78,9 +78,9 @@ p{line-height:25px;font-size:16px;}
 {
   .space-#{$i} {padding-top:$i/2 + 0em;}
 }
-  /*========Blocks==========*/
-  @if $blocks
-  {
+/*========Blocks==========*/
+@if $blocks
+{
   @for $i from 1 through $blocks {
     $m : $block_gutter;
     $gap : $m / 2;
@@ -97,7 +97,7 @@ p{line-height:25px;font-size:16px;}
     display: table;
     clear: both;
   }
-  } 
+}
 
 /*========Font Sizes==========*/
 @for $i from 10 through $font_size
@@ -110,7 +110,7 @@ p{line-height:25px;font-size:16px;}
 @for $i from 0 through $gutters_count
 {
   $g: $gutters_gap + $i/2;
-  .gutter-#{$i} [class*="#{$blocks_class}-"] {padding-left: $g * 1%;  padding-right: $g * 1%; position: relative;}
+  .gutter-#{$i} > [class*="#{$blocks_class}-"] {padding-left: $g * 1%;  padding-right: $g * 1%; position: relative;}
   .row-fluid.gutter-#{$i} { margin-left: -$g * 1%; margin-right: -$g * 1%; }
 }
 
@@ -142,6 +142,10 @@ p{line-height:25px;font-size:16px;}
   .tablet_only {display: block;}
   .tablet {display:block;}
 
+  .tab-block {display: block;}
+  .tab-no-flex-wrap {flex-wrap: nowrap;}
+  .tab-flex-wrap {flex-wrap: wrap;}
+
   @for $i from 1 through $blocks {
     $m : $block_gutter;
     $gap : $m / 2;
@@ -159,7 +163,11 @@ p{line-height:25px;font-size:16px;}
   .phone {display:block;}
   .phone_only {display:block;}
 
-  @for $i from 1 through $blocks { 
+  .phone-block {display: block;}
+  .phone-no-flex-wrap {flex-wrap: nowrap;}
+  .phone-flex-wrap {flex-wrap: wrap;}
+
+  @for $i from 1 through $blocks {
     $m : $block_gutter;
     $gap : $m / 2;
     $w : ((100 / $blocks) * $i);

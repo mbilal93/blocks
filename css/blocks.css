@@ -1,6 +1,6 @@
 /******************************************
 
-    **Blocks CSS Framework**
+
 
     Author: Muhammad Bilal
     Last Modified: 22/04/2017
@@ -421,7 +421,7 @@ p {
   padding-left: 0;
   padding-right: 0; }
 
-.gutter-0 [class*="block-"] {
+.gutter-0 > [class*="block-"] {
   padding-left: 0.5%;
   padding-right: 0.5%;
   position: relative; }
@@ -430,7 +430,7 @@ p {
   margin-left: -0.5%;
   margin-right: -0.5%; }
 
-.gutter-1 [class*="block-"] {
+.gutter-1 > [class*="block-"] {
   padding-left: 1%;
   padding-right: 1%;
   position: relative; }
@@ -439,7 +439,7 @@ p {
   margin-left: -1%;
   margin-right: -1%; }
 
-.gutter-2 [class*="block-"] {
+.gutter-2 > [class*="block-"] {
   padding-left: 1.5%;
   padding-right: 1.5%;
   position: relative; }
@@ -448,7 +448,7 @@ p {
   margin-left: -1.5%;
   margin-right: -1.5%; }
 
-.gutter-3 [class*="block-"] {
+.gutter-3 > [class*="block-"] {
   padding-left: 2%;
   padding-right: 2%;
   position: relative; }
@@ -457,7 +457,7 @@ p {
   margin-left: -2%;
   margin-right: -2%; }
 
-.gutter-4 [class*="block-"] {
+.gutter-4 > [class*="block-"] {
   padding-left: 2.5%;
   padding-right: 2.5%;
   position: relative; }
@@ -466,7 +466,7 @@ p {
   margin-left: -2.5%;
   margin-right: -2.5%; }
 
-.gutter-5 [class*="block-"] {
+.gutter-5 > [class*="block-"] {
   padding-left: 3%;
   padding-right: 3%;
   position: relative; }
@@ -475,7 +475,7 @@ p {
   margin-left: -3%;
   margin-right: -3%; }
 
-.gutter-6 [class*="block-"] {
+.gutter-6 > [class*="block-"] {
   padding-left: 3.5%;
   padding-right: 3.5%;
   position: relative; }
@@ -484,7 +484,7 @@ p {
   margin-left: -3.5%;
   margin-right: -3.5%; }
 
-.gutter-7 [class*="block-"] {
+.gutter-7 > [class*="block-"] {
   padding-left: 4%;
   padding-right: 4%;
   position: relative; }
@@ -493,7 +493,7 @@ p {
   margin-left: -4%;
   margin-right: -4%; }
 
-.gutter-8 [class*="block-"] {
+.gutter-8 > [class*="block-"] {
   padding-left: 4.5%;
   padding-right: 4.5%;
   position: relative; }
@@ -502,7 +502,7 @@ p {
   margin-left: -4.5%;
   margin-right: -4.5%; }
 
-.gutter-9 [class*="block-"] {
+.gutter-9 > [class*="block-"] {
   padding-left: 5%;
   padding-right: 5%;
   position: relative; }
@@ -511,7 +511,7 @@ p {
   margin-left: -5%;
   margin-right: -5%; }
 
-.gutter-10 [class*="block-"] {
+.gutter-10 > [class*="block-"] {
   padding-left: 5.5%;
   padding-right: 5.5%;
   position: relative; }
@@ -539,6 +539,15 @@ p {
 
   .tablet {
     display: block; }
+
+  .tab-block {
+    display: block; }
+
+  .tab-no-flex-wrap {
+    flex-wrap: nowrap; }
+
+  .tab-flex-wrap {
+    flex-wrap: wrap; }
 
   .tab-1 {
     width: 8.3333333333%;
@@ -609,6 +618,15 @@ p {
 
   .phone_only {
     display: block; }
+
+  .phone-block {
+    display: block; }
+
+  .phone-no-flex-wrap {
+    flex-wrap: nowrap; }
+
+  .phone-flex-wrap {
+    flex-wrap: wrap; }
 
   .phone-1 {
     width: 8.3333333333%;

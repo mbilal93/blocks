@@ -1,146 +1,219 @@
 <!Doctype html>
 <html>
-
+<meta charset="UTF-8">
 <head>
 	<title>Blocks Demo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="css/blocks.css" media="all">
 </head>
 
 <body>
 
-<style>
-    body {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
-.container {border:1px solid; padding:10px;}
+<style media="all">
+.container {padding-top: 50px; padding-left: 10px; padding-right: 10px}
 [class*="block-"] {
-    background-color: #ccc;
-    border:1px solid white;
-    height: 100px;
+    margin-bottom: 20px;
+    transition:all 0.3s ease;
 }
-.bg {background-color: dodgerblue; width: 100%; height:100px}
-h2 {
-    padding-bottom:15px;
-    text-align: center;
+h2, h3 {font-weight: 200; margin-bottom: 10px; margin-top: 10px}
+body {
+    background-color: #763C10;
+    color:#fff;
+    font-family: 'Press Start 2P', cursive;
 }
+.bg {
+    background-image: url('images/block.png');
+    width: 100%;
+    min-height: 52px;
+    background-size: 13px;
+    background-repeat: repeat;
+}
+    header {
+        background-image: url("images/stars.png");
+    }
 </style>
 
-	<div class="container">
-        <h1>Blocks.css Test File</h1>
+<header>
+    <div class="container">
+    <div class="text-center"><img src="images/blocks-logo.png"> <br><br><span>v 0.1</span></div>
         <br>
-        <!--Single Viewport Test-->
-        <div class="text-center">This element shows on:</div>
-        <div style="color: darkred;">
-        <h2 class="desktop_only">Desktop only!</h2>
-        <div class="clear space2"></div>
-        <h2 class="tablet_only">Tablet only!</h2>
-        <div class="clear space2"></div>
-        <h2 class="phone_only">Phone only!</h2>
-        <div class="clear space2"></div>
+    </div>
+</header>
+
+	<div class="container">
+
+        
+        <div class="clear space-6"></div>
+
+        <h2 class="desktop_only print_hide">Desktop</h2>
+        <h2 class="tablet_only print_hide">Tablet</h2>
+        <h2 class="phone_only print_hide">Phone</h2>
+        <h2 class="print_show">Printer</h2>
+
+        <a href="#" class="fr f12 text-center print_hide" onclick="window.print(); return false;" title="Try it!"><img width="32" src="images/kitten.png">  <p class="f10">This kitten<br>won't print</p>
+        </a>
+
+        <div class="text-center print_show fr">
+            <img width="64" src="images/doge.png">  <p class="f10">woof! woof!</p>
         </div>
+<div class="print_hide">
+        <span>Regular blocks</span>
 
-        <!--Multi viewport test-->
-        <div style="color: darkred;">
-            <div class="text-center">This element shows on:</div>
-        <h2 class="desktop">Desktop!</h2>
-        <div class="clear space2"></div>
-        <h2 class="tablet">& Tablet!</h2>
-        <div class="clear space2"></div>
-        <h2 class="phone">& Phone!</h2>
-        <div class="clear space2"></div>
+        <div class="clear space-2"></div>
 
-        <!--Non printable element test-->
-        <div style="color: darkred;" class="text-center print_hide">
-            <img src="images/i-will-not-print.jpg" width="120">
-        </div>
+        <hr>
 
-        <!--printable element test-->
-        <div style="color: darkred;" class="text-center print_show">
-            <h3><img src="images/NS-1.jpg" width="auto" height="120" style="vertical-align:middle"> <br><br> KYUN NIKALA MUJHE!</h3>
-        </div>
+        <div class="clear space-2"></div>
 
-    <br>
-        </div>
+        <div class="row-fluid gutter-3">
 
-        <div class="clear space2"></div>
+        <div class="block-6 fl">
 
-    	<h2>2 Grid</h2>
-    	<div class=".gutter-1">
-        	<div class="block-6 phone-12 fl">
+        <h3>1 block grid</h3>
+        <div class="gutter-1 row-fluid space-1">
+            <div class="block-12">
                 <div class="bg"></div>
-
             </div>
-            <div class="block-6 phone-12 fl">
-                <div class="bg"></div>
+        </div>
 
+        <div class="clear space-2"></div>
+
+    	<h3>2 block grid</h3>
+    	<div class="gutter-1 row-fluid space-1">
+        	<div class="block-6 fl">
+                <div class="bg"></div>
+            </div>
+            <div class="block-6 fl">
+                <div class="bg"></div>
             </div>
         </div>
         
-        <div class="clear space2"></div>
-        
-        <h2>3 Grid</h2>
-    	<div class=".gutter-1">
-        	<div class="block-4 phone-12 fl"><div class="bg"></div></div>
-            <div class="block-4 phone-12 fl"><div class="bg"></div></div>
-            <div class="block-4 phone-12 fl"><div class="bg"></div></div>
+        <div class="clear space-2"></div>
+
+        <h3>3 block grid</h3>
+    	<div class="gutter-1 row-fluid space-1">
+        	<div class="block-4 fl"><div class="bg"></div></div>
+            <div class="block-4 fl"><div class="bg"></div></div>
+            <div class="block-4 fl"><div class="bg"></div></div>
             <div class="clear"></div>
         </div>
+
+        </div>
+
+        <div class="block-6 fl">
         
-        <div class="clear space2"></div>
-        
-        <h2>4 Grid</h2>
-    	<div>
+        <h3>4 block grid</h3>
+    	<div class="gutter-1 row-fluid space-1">
         	<div class="block-3 tab-6 fl"><div class="bg"></div></div>
             <div class="block-3 tab-6 fl"><div class="bg"></div></div>
             <div class="block-3 tab-6 fl"><div class="bg"></div></div>
             <div class="block-3 tab-6 fl"><div class="bg"></div></div>
             <div class="clear"></div>
         </div>
-        
-        <div class="clear space2"></div>
-        
-        
-        <h2>6 Grid</h2>
-    	<div>
-        	<div class="block-2 tab-4 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-4 fl"><div class="bg"></div></div>
+
+        <div class="clear space-2"></div>
+
+
+        <h3>5 block grid</h3>
+        <div class="gutter-1 row-fluid space-1">
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-3 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-3 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
             <div class="clear"></div>
         </div>
         
-        <div class="clear space2"></div>
+        <div class="clear space-2"></div>
+        
+        
+        <h3>6 block grid</h3>
+    	<div class="gutter-1 row-fluid space-1">
+        	<div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="clear"></div>
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="clear space-2"></div>
+
+        <hr>
+
+        <div class="clear space-2"></div>
+
+        <h2 class="desktop_only">Desktop</h2>
+        <h2 class="tablet_only">Tablet</h2>
+        <h2 class="phone_only">Phone</h2>
+
+        <span>Structured</span>
+
+        <div class="clear space-4"></div>
 
 
-        <h2>1 Grid</h2>
         <div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
+            <div class="gutter-1 row-fluid flexbox tab-flex-wrap">
+                <div class="block-3 fl flexbox"><div class="bg"></div></div>
 
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <!-- <div class="block-2 tab-3 fl"><div class="bg"></div></div>
-            <div class="block-2 tab-3 fl"><div class="bg"></div></div> -->
-            <div class="clear"></div>
+                <div class="block-6 fl">
+                    <div class="block-6 tab-12 fl" style="margin-bottom: 0">
+                        <div class="flexbox gutter-2 flex-wrap">
+                            <div class="block-6 fl"><div class="bg"></div></div>
+                            <div class="block-6 fl"><div class="bg"></div></div>
+
+                            <div class="block-6 fl" style="margin-bottom: 0"><div class="bg"></div></div>
+                            <div class="block-6 fl" style="margin-bottom: 0"><div class="bg"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="block-6 tab-12 fl" style="margin-bottom: 0">
+                        <div class="space-2 tablet"></div>
+                        <div class="flexbox gutter-2 flex-wrap">
+                            <div class="block-6 fl"><div class="bg"></div></div>
+                            <div class="block-6 fl"><div class="bg"></div></div>
+
+                            <div class="block-6 fl" style="margin-bottom: 0"><div class="bg"></div></div>
+                            <div class="block-6 fl" style="margin-bottom: 0"><div class="bg"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-3 fl gutter-4">
+                    <div class="block-8 flexbox fl" style="height: 100%"><div class="bg"></div></div>
+
+                    <div class="block-4 flexbox fl" style="height: 100%"><div class="bg"></div></div>
+                </div>
+            </div>
         </div>
 
 
-
-
-        <div class="clear space2"></div>
+        <div class="clear space-2"></div>
         
-        <div class="clear space2"></div>
+        <div class="clear space-2"></div>
         
     </div>
 
+        <br><br><br>
+
+        <a href="http://github.com/colspot/blocks" target="_blank">Download Blocks</a>
+
+        <div class="fr f10">© Muhammad Bilal 2017</div>
+
+        <br><br><br>
+
+    </div>
+
+<div class="print_show">
+    <br><br><br>
+    <h5>Printing content goes here...</h5>
+</div>
 </body>
 
 </html>
