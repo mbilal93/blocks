@@ -6,8 +6,6 @@
     Last Modified: 22/04/2017
     Status: BETA
 
-    </ Coded, Compiled from Pakistan with Love! :) />
-
 *******************************************/
 
 Blocks is a very initial, basic and tiny [8kb gzipped] but fully responsive and block structured CSS framework. 
