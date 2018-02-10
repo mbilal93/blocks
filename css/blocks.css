@@ -1,23 +1,21 @@
 /******************************************
 
-
-
     Author: Muhammad Bilal
-    Last Modified: 22/04/2017
+    Last Modified: 9/01/2018
     Status: BETA
-
-    </ Coded, Compiled from Pakistan with Love! :) />
 
 *******************************************/
 /*========General==========*/
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
 
 img {
   border: none;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 img.auto {
   max-width: none; }
