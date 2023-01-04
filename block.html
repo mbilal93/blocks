@@ -18,7 +18,7 @@
 }
 h2, h3 {font-weight: 200; margin-bottom: 10px; margin-top: 10px}
 body {
-    background-color: #000;
+    background-color: #212121;
     color:#fff;
     font-family: 'Plus Jakarta Sans', cursive;
 }
@@ -28,14 +28,13 @@ body {
     background-size: 13px;
     background-repeat: repeat;
     background-color: #fff;
+    border-radius: 3px;
 }
-    header {
-        background-image: url("images/stars.png");
-    }
+
 </style>
 
 <header>
-    <div class="container" style="background-color: #000000d4;">
+    <div class="container">
     <div class="text-center"><img src="images/blocks-logo.png"> <br><br><span>Responsive CSS Grids</span></div>
         <br>
     </div>
@@ -68,7 +67,7 @@ body {
 
         <div class="row-fluid gutter-3">
 
-        <div class="block-6 fl">
+        <div class="block-6 tab-12 fl">
 
         <h3>1 block grid</h3>
         <div class="gutter-1 row-fluid space-1">
@@ -101,7 +100,7 @@ body {
 
         </div>
 
-        <div class="block-6 fl">
+        <div class="block-6 tab-12 fl">
         
         <h3>4 block grid</h3>
     	<div class="gutter-1 row-fluid space-1">
@@ -117,11 +116,11 @@ body {
 
         <h3>5 block grid</h3>
         <div class="gutter-1 row-fluid space-1">
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-3 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-3 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-3 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-3 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
             <div class="clear"></div>
         </div>
         
@@ -130,12 +129,12 @@ body {
         
         <h3>6 block grid</h3>
     	<div class="gutter-1 row-fluid space-1">
-        	<div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
-            <div class="block-2 fl"><div class="bg"></div></div>
+        	<div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
+            <div class="block-2 phone-4 fl"><div class="bg"></div></div>
             <div class="clear"></div>
         </div>
 
@@ -160,9 +159,9 @@ body {
 
         <div>
             <div class="gutter-1 row-fluid flexbox tab-flex-wrap">
-                <div class="block-3 fl flexbox"><div class="bg"></div></div>
+                <div class="block-3 phone-12 fl flexbox"><div class="bg"></div></div>
 
-                <div class="block-6 fl">
+                <div class="block-6 phone-12 fl">
                     <div class="block-6 tab-12 fl" style="margin-bottom: 0">
                         <div class="flexbox gutter-2 flex-wrap">
                             <div class="block-6 fl"><div class="bg"></div></div>
@@ -185,10 +184,10 @@ body {
                     </div>
                 </div>
 
-                <div class="block-3 fl gutter-4">
-                    <div class="block-8 flexbox fl" style="height: 100%"><div class="bg"></div></div>
+                <div class="block-3 phone-12 fl gutter-2">
+                    <div class="block-8 phone-6 flexbox fl" style="height: 100%"><div class="bg"></div></div>
 
-                    <div class="block-4 flexbox fl" style="height: 100%"><div class="bg"></div></div>
+                    <div class="block-4 phone-6 flexbox fl" style="height: 100%"><div class="bg"></div></div>
                 </div>
             </div>
         </div>
@@ -202,9 +201,12 @@ body {
 
         <br><br><br>
 
-        <a href="http://github.com/colspot/blocks" style="background-color: #fff;padding: 1em 3em;color: #000;" target="_blank">Download Blocks</a>
+       <div class="text-center">
+           <a href="http://github.com/colspot/blocks" style="background-color: #fff;padding: 1em 3em;color: #a50000;border: 8px solid;" target="_blank">Download Blocks</a>
+       </div>
 
-        <div class="fr f10">© Muhammad Bilal 2017</div>
+        <br><br><br>
+        <div class="text-center">© Muhammad Bilal 2017</div>
 
         <br><br><br>
 
